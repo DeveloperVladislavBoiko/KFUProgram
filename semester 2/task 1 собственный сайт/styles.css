@@ -1,0 +1,222 @@
+/* Общие стили для страницы */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #000000; /* Глубокий черный фон */
+    color: #d4deb4; /* Светло-зеленый текст для контраста */
+    line-height: 1.6;
+}
+
+header, footer, main, article, section, nav {
+    display: block; /* Убедимся, что это блочные элементы */
+}
+
+header {
+    background-color: #005b33; /* Темно-зеленый фон для заголовка */
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline; /* Горизонтальное меню */
+    margin: 0 1em;
+}
+
+nav a {
+    color: #d4deb4; /* Светло-зеленый цвет ссылок */
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+article {
+    background-color: #1a1a1a; /* Темно-серый фон для статьи */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Легкая светлая тень */
+}
+
+section {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #555; /* Разделитель секций темный */
+}
+
+section:last-child {
+    border-bottom: none; /* Убираем разделитель у последней секции */
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+h1, h2, h3 {
+    color: #d4deb4; /* Светло-зеленые заголовки */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    float: right; /* Обтекание текстом справа */
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+details {
+    background-color: #333; /* Темно-серый фон для деталей */
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+    color: #d4deb4; /* Цвет для текста в summary */
+}
+
+footer {
+    background-color: #005b33; /* Темно-зеленый фон подвала */
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed; /* Фиксированный подвал внизу */
+    bottom: 0;
+    width: 100%;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #005b33; /* Темно-зеленый цвет кнопки */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #007f5c; /* Более светлый зеленый при наведении */
+}
+
+/* Стили для таблицы */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Убираем двойные границы */
+    margin-top: 20px;
+}
+
+caption {
+    caption-side: top; /* Заголовок таблицы сверху */
+    text-align: left;
+    font-weight: bold;
+    color: #d4deb4; /* Цвет заголовка таблицы */
+}
+
+th, td {
+    border: 1px solid #555; /* Темная граница для ячеек */
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #333; /* Темно-серый фон для заголовков таблицы */
+    color: #d4deb4; /* Светло-зеленый текст для заголовков */
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #222; /* Темно-серый оттенок для четных строк */
+}
+
+/* Стили для формы */
+form {
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение элементов формы */
+    max-width: 500px; /* Максимальная ширина формы */
+    margin: 20px auto; /* Центрирование формы на странице */
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block; /* Метка на новой строке */
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #d4deb4; /* Светло-зеленый цвет для меток */
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555; /* Темная граница для полей ввода */
+    border-radius: 4px;
+
+    box-sizing: border-box; /* Чтобы padding и border не увеличивали ширину элемента */
+    font-size: 1em;
+    background-color: #333; /* Темный фон для полей ввода */
+    color: #d4deb4; /* Светло-зеленый текст для полей ввода */
+}
+textarea {
+    resize: vertical; /* Разрешить вертикальное изменение размера textarea */
+}
+
+/* Псевдоклассы для валидации */
+input:required {
+    border-left: 5px solid #ff4d4d; /* Красная полоса слева для обязательных полей */
+}
+
+input:optional {
+    border-left: 5px solid #4cae4c; /* Зеленая полоса для необязательных (если бы были) */
+}
+
+input:in-range {
+    border-color: #4cae4c; /* Темно-зеленая рамка для числового поля в допустимом диапазоне */
+}
+
+input:out-of-range {
+    background-color: #3d0e0e; /* Темно-красный фон для значения вне диапазона */
+    border-color: #ff4d4d; /* Красная граница */
+}
+
+/* Стилизация кнопок формы */
+form button[type="submit"],
+form button[type="reset"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-right: 10px; /* Отступ между кнопками */
+}
+
+form button[type="submit"] {
+    background-color: #007b33; /* Темно-зеленый цвет кнопки "Отправить" */
+    color: white;
+}
+
+form button[type="submit"]:hover {
+    background-color: #005b26; /* Более темный зеленый при наведении на кнопку "Отправить" */
+}
+
+form button[type="reset"] {
+    background-color: #4e4e4e; /* Темно-серый для "Очистить" */
+    color: #d4deb4; /* Светло-зеленый текст на кнопке "Очистить" */
+}
+
+form button[type="reset"]:hover {
+    background-color: #666; /* Более светлый серый при наведении */
+}
