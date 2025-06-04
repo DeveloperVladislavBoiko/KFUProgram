@@ -1,0 +1,7 @@
+5.0 I.I. Ivanov
+3.0 P.P. Petrov
+7.0 S.S. Sidorov
+2.0 A.S. Smirnova
+4.0 M.K. Kuznetsova
+6.0 A.P. Popov
+8.0 O.V. Vasileva
