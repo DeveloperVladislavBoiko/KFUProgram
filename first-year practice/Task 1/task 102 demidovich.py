@@ -1,3 +1,4 @@
+#102
 def numerical_sequence_102(n_max=10**6):
     n_even = n_max if n_max % 2 == 0 else n_max - 1
     n_odd = n_max if n_max % 2 != 0 else n_max - 1
