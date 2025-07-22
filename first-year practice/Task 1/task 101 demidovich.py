@@ -1,3 +1,4 @@
+#101
 def numerical_sequence_101(n_max=10**6):
     x_large = 1 - 1 / n_max
     inf_xn = 0  
